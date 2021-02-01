@@ -1,5 +1,7 @@
 <ObjectDefinition>
-  <variables frozen="0"/>
+  <variables frozen="0">
+    <variable displayName="Seconds" name="params.seconds" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="The amount of seconds to wait" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
   <example/>
   <process name="Process/workflows/Wait/Process_wait">
     <displayName>wait</displayName>
@@ -9,6 +11,24 @@
     <task name="Task_wait.py">
       <processPath>/opt/fmc_repository/Process/workflows/Wait/Process_wait/Tasks</processPath>
       <displayName>wait</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Wait/Process_wait3">
+    <displayName>wait3</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_wait.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Wait/Process_wait3/Tasks</processPath>
+      <displayName>wait</displayName>
+    </task>
+    <task name="Task_wait_again.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Wait/Process_wait3/Tasks</processPath>
+      <displayName>wait_again</displayName>
+    </task>
+    <task name="Task_wait_more.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Wait/Process_wait3/Tasks</processPath>
+      <displayName>wait_more</displayName>
     </task>
   </process>
   <information>
