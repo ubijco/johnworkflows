@@ -15,7 +15,7 @@ The allowed types are:
 
  Add as many variables as needed
 '''
-#dev_var = Variables()
+dev_var = Variables()
 #dev_var.add('var_name', var_type='String')
 #dev_var.add('var_name2', var_type='Integer')
 
@@ -28,7 +28,7 @@ Update context array [add/update/delete variables] as per requirement
 
 ENTER YOUR CODE HERE
 '''
-#context = Variables.task_call(dev_var)
+context = Variables.task_call(dev_var)
 #context['var_name2'] = int(context['var_name2']) + 1
 
 '''
