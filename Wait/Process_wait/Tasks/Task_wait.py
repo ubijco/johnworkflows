@@ -3,6 +3,7 @@ Visit http://[YOUR_MSA_URL]/msa_sdk/ to see what you can import.
 '''
 from msa_sdk.variables import Variables
 from msa_sdk.msa_api import MSA_API
+import time
 
 '''
 List all the parameters required by the task
@@ -30,6 +31,7 @@ ENTER YOUR CODE HERE
 '''
 context = Variables.task_call(dev_var)
 #context['var_name2'] = int(context['var_name2']) + 1
+time.sleep(3)
 
 '''
 Format of the Task response :
