@@ -1,6 +1,16 @@
 <ObjectDefinition>
   <variables frozen="0"/>
   <example/>
+  <process name="Process/workflows/Wait/Process_wait">
+    <displayName>wait</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule>true</allowSchedule>
+    <task name="Task_wait.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Wait/Process_wait/Tasks</processPath>
+      <displayName>wait</displayName>
+    </task>
+  </process>
   <information>
     <icon/>
     <description>Waits a specified time</description>
