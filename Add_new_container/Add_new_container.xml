@@ -20,7 +20,7 @@
     <serviceTaskType>python</serviceTaskType>
     <order>10000</order>
     <visibility>5</visibility>
-    <name>Add new container</name>
+    <name>Provision server</name>
     <group/>
   </information>
 </ObjectDefinition>
