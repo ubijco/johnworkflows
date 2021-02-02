@@ -3,6 +3,24 @@
     <variable displayName="seconds" name="params.seconds" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example/>
+  <process name="Process/workflows/Config_server/Process_Config_server">
+    <displayName>Config server</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Install_Nginx.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Config_server/Process_Config_server/Tasks</processPath>
+      <displayName>Install Nginx</displayName>
+    </task>
+    <task name="Task_Apply_config.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Config_server/Process_Config_server/Tasks</processPath>
+      <displayName>Apply config</displayName>
+    </task>
+    <task name="Task_Start_Nginx.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Config_server/Process_Config_server/Tasks</processPath>
+      <displayName>Start Nginx</displayName>
+    </task>
+  </process>
   <information>
     <icon/>
     <description>Configure a new Nginx server</description>
