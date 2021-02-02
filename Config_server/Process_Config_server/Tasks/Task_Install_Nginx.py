@@ -5,7 +5,7 @@ import time
 dev_var = Variables()
 dev_var.add('seconds', var_type='Integer')
 
-# test comment
+# test comment from John
 context = Variables.task_call(dev_var)
 time.sleep(int(context['seconds']))
 
