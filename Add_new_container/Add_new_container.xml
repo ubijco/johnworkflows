@@ -3,6 +3,16 @@
     <variable displayName="seconds" name="params.seconds" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example/>
+  <process name="Process/workflows/Add_new_container/Process_Add_new_container">
+    <displayName>Add new container</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Add_new_container.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Add_new_container/Process_Add_new_container/Tasks</processPath>
+      <displayName>Add new container</displayName>
+    </task>
+  </process>
   <information>
     <icon/>
     <description>Add a new Docker container</description>
