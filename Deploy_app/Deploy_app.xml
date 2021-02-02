@@ -3,6 +3,28 @@
     <variable displayName="seconds" name="params.seconds" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example/>
+  <process name="Process/workflows/Deploy_app/Process_Deploy_app">
+    <displayName>Deploy app</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Build_artifact.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Deploy_app/Process_Deploy_app/Tasks</processPath>
+      <displayName>Build artifact</displayName>
+    </task>
+    <task name="Task_Copy_artifact.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Deploy_app/Process_Deploy_app/Tasks</processPath>
+      <displayName>Copy artifact</displayName>
+    </task>
+    <task name="Task_Expand_artifact.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Deploy_app/Process_Deploy_app/Tasks</processPath>
+      <displayName>Expand artifact</displayName>
+    </task>
+    <task name="Task_Restart_Nginx.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Deploy_app/Process_Deploy_app/Tasks</processPath>
+      <displayName>Restart Nginx</displayName>
+    </task>
+  </process>
   <information>
     <icon/>
     <description>Build and deploy my app</description>
